@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main(){
+    cout<<"\t\t\t\tSimple Calculator\n\n\n";
+    int n1,n2;//number
+    cout<<"Enter the number n1 : \n";
+    cin>>n1;
+    cout<<"Enter the number n2 : \n";
+    cin>>n2;
+    char op;//operator
+    cout<<"Enter the operator: '+' , '-', '*' , '/'\n";
+    cin>>op;
+    switch(op){
+        case'+':
+        cout<<n1+n2<<endl;
+        break;
+        case'-':cout<<n1-n2<<endl;
+        break;
+        case'*':cout<<n1*n2<<endl;
+        break;
+        case'/':cout<<n1/n2<<endl;
+        break;
+        default:
+        cout<<"invalid operator"<<endl;
+     }
+}
